@@ -1,49 +1,9 @@
 @import "./base/reset";
 @import "./utils/variables";
 @import "./utils/mixin.scss";
+@import "./layout/_header";
+@import "./components/_buttons";
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &__logo {
-    background: #fff;
-    width: 160%;
-    text-align: center;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    border-bottom: 2px solid #f4f4f4;
-    padding: 5px 46px;
-    img {
-      height: 50px;
-      width: 160px;
-    }
-  }
-
-  &__search input {
-    width: 100vw;
-    height: 50px;
-    /*border: 1px solid #f3f3f3;*/
-    text-align: center;
-    background-color: $color-background-2;
-    border: 2px solid $color-background-2;
-    font-family: $text-font;
-    font-size: 18px;
-    font-weight: bold;
-    &:focus {
-      outline: none;
-    }
-  }
-  &__icons {
-    display: block;
-    position: absolute;
-    top: 80px;
-    margin-left: 100px;
-    color: $color-black;
-    height: 30px;
-    width: 30px;
-  }
-}
 main {
   display: flex;
   flex-flow: column nowrap;
@@ -75,19 +35,77 @@ main {
       color: #888;
     }
   }
-  &__btn-1 {
-    display: inline-block;
-    background: linear-gradient(#ff79da, #9356dc);
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px 5px;
+  &__title {
+    font-size: 18px;
+    font-weight: $fontWeight;
+    font-family: $text-font;
+    margin-bottom: 15px;
+  }
+  &__step {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  &__button {
+    flex: 1 0 auto;
+    margin-bottom: 20px;
     text-decoration: none;
-    cursor: pointer;
-    border: 0;
+    background: $color-background-2;
+    border-radius: 30px;
     text-align: center;
-    border-radius: 25px;
+    margin-left: 0;
+    font-size: 12px;
+    font-family: $text-font;
+    color: $color-black;
+    font-weight: $fontWeight;
+    padding: 20px 15px;
+    @include shadowbox;
+  }
+  &__circle {
+    position: absolute;
+    left: 15px;
+    margin-top: -5px;
+    background-color: $color-primary;
+    border-radius: 100%;
     color: #fff;
-    box-shadow: 0 5px 15px 0 #c3c3c3;
-    font-weight: bold;
-    margin: 0 0.3em 0.3em 0;
-    padding: 15px 30px;
-    transition: 0.2s;
+    height: 25px;
+    width: 25px;
+    padding: 4px 8px;
+    font-weight: $fontWeight;
+    line-height: 1.3;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: grey;
+    margin-right: 15px;
+    position: absolute;
+    font-size: 14px;
+    margin-left: 17px;
+    margin-right: 20px;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.store {
+  background-color: $color-background-2;
+  padding: 10px;
+  margin-top: 15px;
+  &__title {
+    font-size: 22px;
+    font-family: $text-font;
+    font-weight: $fontWeight;
+    margin-bottom: 18px;
+    color: $color-black;
   }
 }

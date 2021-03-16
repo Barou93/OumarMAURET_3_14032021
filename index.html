@@ -36,12 +36,14 @@
           <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood logo" />
         </a>
       </div>
-      <div class="header__search">
-        <div class="header__icons">
-          <i class="fas fa-map-marker-alt"></i>
+      <form action="" class="search__location">
+        <div class="search__icons">
+          <i class="fas fa-map-marker-alt location"></i>
         </div>
-        <input type="text" placeholder="Paris, Belleville" />
-      </div>
+        <div class="input-field">
+          <input type="text" placeholder="Paris, Belleville" />
+        </div>
+      </form>
     </header>
     <main>
       <article class="reserve">
@@ -53,6 +55,56 @@
         </hgroup>
         <a href="" class="reserve__btn-1"> Explorer nos restaurants </a>
       </article>
+      <aside class="aside">
+        <h2 class="aside__title">Fonctionnement</h2>
+        <div class="aside__step">
+          <a href="#" class="aside__button">
+            <span class="aside__circle">1</span>
+            <span class="aside__icons">
+              <i class="fas fa-mobile-alt"></i>
+            </span>
+            <span class="aside__texte">Choisissez un restaurant</span>
+          </a>
+          <a href="#" class="aside__button">
+            <span class="aside__circle">2</span>
+            <span class="aside__icons">
+              <i class="fas fa-list"></i>
+            </span>
+            <span class="aside__texte">Composez un menu</span>
+          </a>
+          <a href="#" class="aside__button">
+            <span class="aside__circle">3</span>
+            <span class="aside__icons">
+              <i class="fas fa-store"></i>
+            </span>
+            <span class="aside__texte">Déguster au restaurant</span>
+          </a>
+        </div>
+      </aside>
+      <section>
+        <div class="store">
+          <h2 class="store__title">Restaurants</h2>
+          <article class="store__card">
+            <figure class="store__img__header">
+              <img
+                src="images/restaurants/palette.jpg"
+                alt="La palette du goût"
+                class="cart__img"
+              />
+              <figcaption class="img-btn-left">Nouveau</figcaption>
+            </figure>
+            <header class="store__contain">
+              <hgroup>
+                <h3>
+                  <a href="" class="strong">La palette du goût</a>
+                </h3>
+                <h4 class="subtitle">Menilmontant</h4>
+              </hgroup>
+              <div class="like"></div>
+            </header>
+          </article>
+        </div>
+      </section>
     </main>
   </body>
 </html>
