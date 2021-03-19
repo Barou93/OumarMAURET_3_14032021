@@ -1,0 +1,18 @@
+.footer {
+  background: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+
+  &__logo {
+    filter: invert(1);
+    max-width: 150px;
+  }
+  &__link {
+    text-align: left;
+  }
+}
+
+.footer-icons {
+  margin-right: 15px;
+}

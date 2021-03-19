@@ -1,0 +1,150 @@
+@import "../utils/mixin.scss";
+@import "../layout/_aside";
+
+.aside {
+  &__step {
+    @include tablette {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+  &__button {
+    @include tablette {
+      margin-left: 20px;
+    }
+  }
+}
+
+/*********MEDIA QUERIES PHONE DISPLAY : 764px**************/
+/*.header {
+  @include phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9e9e9;
+  }
+
+  &__logo {
+    @include phone {
+      background: #fff;
+      width: 160%;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+      border-bottom: 2px solid #f4f4f4;
+      padding: 5px 46px;
+      img {
+        height: 50px;
+        width: 160px;
+      }
+    }
+  }
+}
+   
+.search__location {
+  @include phone {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 200px;
+
+    .search__icons {
+      padding: 8px 10px;
+    }
+
+    .input-field {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+      flex: 1 0 0;
+      input {
+        background-color: transparent;
+        border: 0;
+        padding: 15px 10px;
+        width: 100%;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+*/ /*
+.aside {
+  @include phone {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 5px;
+  }
+  &__title {
+    @include phone {
+      font-size: 18px;
+      font-weight: $fontWeight;
+      font-family: $text-font;
+      margin-bottom: 15px;
+    }
+  }
+  &__step {
+    @include phone {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  }
+  &__button {
+    @include phone {
+      flex: 1 0 auto;
+      margin-bottom: 20px;
+      text-decoration: none;
+      background: $color-background-2;
+      border-radius: 30px;
+      text-align: justify;
+      margin-left: 0;
+      font-size: 12px;
+      font-family: $text-font;
+      color: $color-black;
+      font-weight: $fontWeight;
+      padding: 20px 15px;
+      @include shadowbox;
+    }
+  }
+  &__circle {
+    @include phone {
+      position: absolute;
+      left: 15px;
+      margin-top: -5px;
+      background-color: $color-primary;
+      border-radius: 100%;
+      color: #fff;
+      height: 20px;
+      width: 20px;
+      padding: 4px 8px;
+      font-weight: $fontWeight;
+    }
+  }
+  &__icons {
+    @include phone {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: grey;
+      margin-right: 15px;
+      position: absolute;
+      font-size: 14px;
+      margin-left: 17px;
+      margin-right: 20px;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  &__texte {
+    @include phone {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+*/

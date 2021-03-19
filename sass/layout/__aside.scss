@@ -1,0 +1,63 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px 5px;
+  &__title {
+    font-size: 18px;
+    font-weight: $fontWeight;
+    font-family: $text-font;
+    margin-bottom: 15px;
+  }
+  &__step {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  &__button {
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background: $color-background-2;
+    border-radius: 30px;
+    text-align: justify;
+    margin-left: 0;
+    font-size: 12px;
+    font-family: $text-font;
+    color: $color-black;
+    font-weight: $fontWeight;
+    padding: 20px 15px;
+    @include shadowbox;
+  }
+  &__circle {
+    position: absolute;
+    left: 15px;
+    margin-top: -5px;
+    background-color: $color-primary;
+    border-radius: 100%;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    padding: 4px 8px;
+    font-weight: $fontWeight;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: grey;
+    margin-right: 15px;
+    position: absolute;
+    font-size: 14px;
+    margin-left: 17px;
+    margin-right: 20px;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  &__texte {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

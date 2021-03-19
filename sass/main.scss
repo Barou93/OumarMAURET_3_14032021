@@ -3,6 +3,9 @@
 @import "./utils/mixin.scss";
 @import "./layout/_header";
 @import "./components/_buttons";
+@import "./layout/_footer";
+@import "./layout/_mediaqueries";
+@import "./layout/_aside";
 
 main {
   display: flex;
@@ -22,6 +25,7 @@ main {
   text-align: center;
   padding: 30px 10px;
   background-color: $color-background;
+
   &__hgroup {
     margin-bottom: 35px;
     h1 {
@@ -30,69 +34,9 @@ main {
     }
     h2 {
       @extend %group;
-      font-size: 18px;
+      font-size: 15px;
       font-weight: normal;
       color: #888;
-    }
-  }
-}
-
-.aside {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  margin: 10px 5px;
-  &__title {
-    font-size: 18px;
-    font-weight: $fontWeight;
-    font-family: $text-font;
-    margin-bottom: 15px;
-  }
-  &__step {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  &__button {
-    flex: 1 0 auto;
-    margin-bottom: 20px;
-    text-decoration: none;
-    background: $color-background-2;
-    border-radius: 30px;
-    text-align: center;
-    margin-left: 0;
-    font-size: 12px;
-    font-family: $text-font;
-    color: $color-black;
-    font-weight: $fontWeight;
-    padding: 20px 15px;
-    @include shadowbox;
-  }
-  &__circle {
-    position: absolute;
-    left: 15px;
-    margin-top: -5px;
-    background-color: $color-primary;
-    border-radius: 100%;
-    color: #fff;
-    height: 25px;
-    width: 25px;
-    padding: 4px 8px;
-    font-weight: $fontWeight;
-    line-height: 1.3;
-  }
-  &__icons {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: grey;
-    margin-right: 15px;
-    position: absolute;
-    font-size: 14px;
-    margin-left: 17px;
-    margin-right: 20px;
-    &:hover {
-      color: $color-primary;
     }
   }
 }
@@ -149,8 +93,7 @@ main {
   flex-wrap: nowrap;
   padding: 10px;
   width: 100%;
-  h3 {
-  }
+
   h4 {
     color: #9d9d9d;
     font-size: 12px;
@@ -164,49 +107,4 @@ main {
   font-weight: $fontWeight;
   font-size: 15px;
   font-family: $text-font;
-}
-.like {
-  position: relative;
-
-  i {
-    color: #9d9d9d;
-    font-size: 20px;
-    left: 50%;
-  }
-  .hover-icon {
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    &:hover {
-      color: $color-primary;
-      opacity: 1;
-      z-index: 999;
-    }
-  }
-  &:hover {
-    cursor: pointer;
-    overflow: hidden;
-  }
-  .default-icon:hover {
-    opacity: 0;
-  }
-}
-
-.footer {
-  background: #333;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-
-  &__logo {
-    filter: invert(1);
-    max-width: 150px;
-  }
-  &__link {
-    text-align: left;
-  }
-}
-
-.footer-icons {
-  margin-right: 15px;
 }
