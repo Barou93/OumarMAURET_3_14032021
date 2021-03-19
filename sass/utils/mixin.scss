@@ -1,0 +1,26 @@
+@mixin shadowbox {
+  box-shadow: 0 5px 15px 0 #c3c3c3;
+}
+
+@mixin lineargarden {
+  background: linear-gradient(#ff79da, #9356dc);
+}
+
+/*Media queries*/
+
+@mixin desktop {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin tablette {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media only screen and (max-width: 420px) {
+    @content;
+  }
+}
