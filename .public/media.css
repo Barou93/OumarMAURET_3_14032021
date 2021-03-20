@@ -5,6 +5,34 @@
 /************PHONE : 768px *************************/
 
 @media screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+  }
+
+  .header__logo {
+    text-align: left;
+    box-shadow: none;
+  }
+
+  .search__location {
+    background: linear-gradient(#ff79da, #9356dc);
+    padding: 3px -5px;
+    width: 50%;
+    border-radius: 25px;
+    margin-right: 25px;
+  }
+  .search__location .search__icons {
+    color: #fff;
+  }
+
+  input::placeholder {
+    color: #fff;
+  }
+
   .aside__step {
     display: flex;
     justify-content: space-between;
@@ -28,6 +56,14 @@
     display: block;
     text-align: center;
     margin-top: -5px;
+    margin-right: 50px;
+  }
+
+  .aside__icons {
+    display: block;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: -7px;
   }
   .store {
     display: flex;
@@ -54,4 +90,7 @@
   .footer__link {
     text-align: center;
   }
+}
+
+@media screen and (min-width: 765px) and (max-width: 1023px) {
 }
