@@ -2,7 +2,7 @@
 /*=
 
 
-/************PHONE : 768px *************************/
+/************DESKTOP : 1024px *************************/
 
 @media screen and (min-width: 1024px) {
   .header {
@@ -25,6 +25,10 @@
     border-radius: 25px;
     margin-right: 25px;
   }
+
+  .search__location input {
+    color: #fff;
+  }
   .search__location .search__icons {
     color: #fff;
   }
@@ -32,7 +36,15 @@
   input::placeholder {
     color: #fff;
   }
+  .store__img__header img {
+    max-width: 275px !important;
+    height: 200px;
+  }
+}
 
+/************TABLETTE : 768px *************************/
+
+@media screen and (min-width: 765px) {
   .aside__step {
     display: flex;
     justify-content: space-between;
@@ -56,22 +68,19 @@
     display: block;
     text-align: center;
     margin-top: -5px;
-    margin-right: 50px;
   }
 
   .aside__icons {
-    display: block;
-    justify-content: space-between;
-    margin-left: 30px;
+    margin-left: 17px;
     margin-top: -7px;
   }
   .store {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    /*margin-left: -15px;
+    margin-right: -15px;*/
     padding: 15px;
     height: 100%;
   }
@@ -80,7 +89,7 @@
     width: 100%;
   }
   .store__img__header img {
-    max-width: 200px;
+    max-width: 325px;
     height: 200px;
   }
 
@@ -90,7 +99,4 @@
   .footer__link {
     text-align: center;
   }
-}
-
-@media screen and (min-width: 765px) and (max-width: 1023px) {
 }
