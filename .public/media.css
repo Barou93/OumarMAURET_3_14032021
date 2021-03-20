@@ -2,9 +2,49 @@
 /*=
 
 
-/************PHONE : 768px *************************/
+/************DESKTOP : 1024px *************************/
 
 @media screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+  }
+
+  .header__logo {
+    text-align: left;
+    box-shadow: none;
+  }
+
+  .search__location {
+    background: linear-gradient(#ff79da, #9356dc);
+    padding: 3px -5px;
+    width: 50%;
+    border-radius: 25px;
+    margin-right: 25px;
+  }
+
+  .search__location input {
+    color: #fff;
+  }
+  .search__location .search__icons {
+    color: #fff;
+  }
+
+  input::placeholder {
+    color: #fff;
+  }
+  .store__img__header img {
+    max-width: 275px !important;
+    height: 200px;
+  }
+}
+
+/************TABLETTE : 768px *************************/
+
+@media screen and (min-width: 765px) {
   .aside__step {
     display: flex;
     justify-content: space-between;
@@ -29,13 +69,18 @@
     text-align: center;
     margin-top: -5px;
   }
+
+  .aside__icons {
+    margin-left: 17px;
+    margin-top: -7px;
+  }
   .store {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    /*margin-left: -15px;
+    margin-right: -15px;*/
     padding: 15px;
     height: 100%;
   }
@@ -44,7 +89,7 @@
     width: 100%;
   }
   .store__img__header img {
-    max-width: 200px;
+    max-width: 325px;
     height: 200px;
   }
 
