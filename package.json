@@ -1,0 +1,19 @@
+{
+  "name": "projet_3_oumarmauret",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barou93/OumarMAURET_3_14032021.git"
+  },
+  "author": "Oumar MAURET",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barou93/OumarMAURET_3_14032021/issues"
+  },
+  "homepage": "https://github.com/Barou93/OumarMAURET_3_14032021#readme"
+}

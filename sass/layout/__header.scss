@@ -1,16 +1,29 @@
+@import "../utils/mixin.scss";
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #e9e9e9;
+  @include desktop-only {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+  }
 
   &__logo {
-    background: #fff;
+    background: rgb(255, 255, 255);
     width: 160%;
     text-align: center;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid #f4f4f4;
     padding: 5px 46px;
+    @include desktop-only {
+      text-align: left;
+      box-shadow: none;
+    }
     img {
       height: 50px;
       width: 160px;
@@ -23,6 +36,13 @@
   align-items: center;
   margin: auto;
   width: 200px;
+  @include desktop-only {
+    background: linear-gradient(#ff79da, #9356dc);
+    padding: 3px -5px;
+    width: 50%;
+    border-radius: 25px;
+    margin-right: 25px;
+  }
 
   .search__icons {
     padding: 8px 10px;
@@ -37,8 +57,16 @@
       border: 0;
       padding: 15px 10px;
       width: 100%;
+      @include desktop-only {
+        color: #fff;
+      }
       &:focus {
         outline: none;
+      }
+      &::placeholder {
+        @include desktop-only {
+          color: #fff;
+        }
       }
     }
   }

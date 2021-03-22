@@ -7,9 +7,15 @@
   &__logo {
     filter: invert(1);
     max-width: 150px;
+    @include tablette-only {
+      max-width: none;
+    }
   }
   &__link {
     text-align: left;
+    @include tablette-only {
+      text-align: center;
+    }
   }
 }
 
