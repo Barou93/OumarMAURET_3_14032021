@@ -210,6 +210,11 @@ th {
   opacity: 0;
 }
 
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .footer {
   background: #333;
   padding: 20px;
@@ -601,11 +606,11 @@ h1 {
   padding: 5px 46px;
 }
 
-.header__back__icon {
-  display: inline-block;
+header .header__back__icon {
+  display: block;
   position: relative;
-  right: 250px;
   bottom: 10px;
+  right: 250px;
   color: #000;
 }
 
@@ -643,7 +648,7 @@ header .cover__img img {
   padding: 20px 0 20px 20px;
 }
 
-.like {
+.like-menu {
   position: absolute;
   right: 30px;
   top: 20px;
@@ -660,12 +665,12 @@ header .cover__img img {
   margin-bottom: 15px;
 }
 
-.subtitle {
+.sub__title {
   margin-bottom: 15px;
   font-size: 18px;
   text-transform: uppercase;
 }
-.subtitle:after {
+.sub__title:after {
   content: "";
   border-bottom: 2px solid #99e2d0;
   display: block;
@@ -695,7 +700,7 @@ header .cover__img img {
   position: relative;
   top: 25px;
   color: #333;
-  font-size: 1em;
+  font-size: 11px;
   font-weight: normal;
 }
 .menu__text .price__container {
@@ -718,7 +723,7 @@ header .cover__img img {
   border-top-right-radius: 15px;
   position: relative;
 }
-.menu__text .btn-cirle {
+.menu__text .btn-circle {
   font-size: 24px;
   color: #fff;
 }
@@ -735,8 +740,8 @@ header .cover__img img {
 .menu__text:hover .btn-circle {
   position: absolute;
   background: #99e2d0;
-  left: 27%;
-  top: 30%;
+  /*left: 27%;
+  top: 30%;*/
 }
 
 /*# sourceMappingURL=style.css.map */
