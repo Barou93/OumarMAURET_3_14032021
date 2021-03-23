@@ -1,18 +1,2 @@
 @import "../utils/mixin.scss";
 @import "../layout/_aside";
-
-.aside {
-  &__step {
-    @include tablette {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      width: 100%;
-    }
-  }
-  &__button {
-    @include tablette {
-      margin-left: 20px;
-    }
-  }
-}

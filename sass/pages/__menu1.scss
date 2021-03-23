@@ -1,0 +1,205 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+@import "../components/_buttons";
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: Roboto, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    background: rgb(255, 255, 255);
+    width: 160%;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #f4f4f4;
+    padding: 5px 46px;
+    @include desktop-only {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+header .header__back__icon {
+  display: block;
+  margin-right: 275px;
+  position: absolute;
+  left: 25px;
+  color: #000;
+}
+
+header .cover__img {
+  height: 270px;
+  width: 100%;
+  z-index: -1;
+}
+
+header .cover__img img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.bg-grey {
+  background: #f6f6f6;
+}
+
+.menu main {
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  margin-top: -50px;
+  z-index: 999;
+}
+.menu .menu__summary {
+  position: relative;
+  width: 100%;
+}
+
+.menu__title {
+  font-family: $logo-title-font;
+  font-weight: normal;
+  padding: 20px 0 20px 20px;
+}
+
+.like-menu {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.menu__plats {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 20px;
+}
+
+.menu__details {
+  flex: 1 0 33%;
+  margin-bottom: 15px;
+
+  @include desktop-only {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.sub__title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  @include desktop-only {
+    padding: 15px 0 15px 15px;
+    width: 100%;
+  }
+
+  &:after {
+    content: "";
+    border-bottom: 2px solid $color-tertiary;
+    display: block;
+    padding-top: 3px;
+    width: 40px;
+  }
+}
+
+.menu__text {
+  background: #fff;
+  border-radius: 20px;
+  padding: 0 5px 8px 12px;
+  @include shadowbox;
+  margin-top: 25px;
+  @include desktop-only {
+    flex: 25%;
+    margin-left: 15px;
+  }
+
+  &:hover {
+    @include shadowOne;
+  }
+  .prod {
+    position: relative;
+    top: 12px;
+    font-size: 15px;
+    font-weight: $fontWeight;
+    margin: 0 0 5px;
+    overflow: hidden;
+  }
+  h4 {
+    position: relative;
+    top: 25px;
+    color: #333;
+    font-size: 11px;
+    font-weight: normal;
+  }
+  .price__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .price {
+    align-items: center;
+    display: flex;
+    font-size: 1.125em;
+    font-weight: bold;
+    justify-content: flex-end;
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  .checkbox {
+    display: none;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+  }
+  .btn-circle {
+    font-size: 24px;
+    color: #fff;
+  }
+}
+
+.menu__text:hover .checkbox {
+  display: block;
+  flex: 0 0 15%;
+  background: $color-tertiary;
+  max-width: 50px;
+  overflow: hidden;
+  transform-origin: 50% 50%;
+}
+
+.menu__text:hover .btn-circle {
+  position: absolute;
+  background: $color-tertiary;
+  /*left: 27%;
+  top: 30%;*/
+}
+
+.command-btn {
+  text-align: center;
+}
