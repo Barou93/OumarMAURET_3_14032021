@@ -51,6 +51,9 @@
 
 .btn-2 {
   margin-top: 25px;
-  margin-left: 45px;
   width: 60%;
+
+  @include tablette-only {
+    width: 20%;
+  }
 }

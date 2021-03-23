@@ -213,8 +213,12 @@ th {
 /***************Commander Button***************/
 .btn-2 {
   margin-top: 25px;
-  margin-left: 45px;
   width: 60%;
+}
+@media only screen and (min-width: 765px) {
+  .btn-2 {
+    width: 20%;
+  }
 }
 
 footer a {
@@ -636,8 +640,12 @@ main {
 /***************Commander Button***************/
 .btn-2 {
   margin-top: 25px;
-  margin-left: 45px;
   width: 60%;
+}
+@media only screen and (min-width: 765px) {
+  .btn-2 {
+    width: 20%;
+  }
 }
 
 body {
@@ -686,6 +694,7 @@ header .header__back__icon {
   display: block;
   margin-right: 275px;
   position: absolute;
+  left: 25px;
   color: #000;
 }
 
@@ -739,11 +748,26 @@ header .cover__img img {
   flex: 1 0 33%;
   margin-bottom: 15px;
 }
+@media only screen and (min-width: 1024px) {
+  .menu__details {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
 
 .sub__title {
   margin-bottom: 15px;
   font-size: 18px;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 1024px) {
+  .sub__title {
+    padding: 15px 0 15px 15px;
+    width: 100%;
+  }
 }
 .sub__title:after {
   content: "";
@@ -759,6 +783,12 @@ header .cover__img img {
   padding: 0 5px 8px 12px;
   box-shadow: 0 5px 15px 0 #c3c3c3;
   margin-top: 25px;
+}
+@media only screen and (min-width: 1024px) {
+  .menu__text {
+    flex: 25%;
+    margin-left: 15px;
+  }
 }
 .menu__text:hover {
   box-shadow: 0 5px 15px 0 #9d9d9d;
@@ -817,6 +847,10 @@ header .cover__img img {
   background: #99e2d0;
   /*left: 27%;
   top: 30%;*/
+}
+
+.command-btn {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

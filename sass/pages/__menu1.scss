@@ -48,6 +48,7 @@ header .header__back__icon {
   display: block;
   margin-right: 275px;
   position: absolute;
+  left: 25px;
   color: #000;
 }
 
@@ -99,11 +100,24 @@ header .cover__img img {
 .menu__details {
   flex: 1 0 33%;
   margin-bottom: 15px;
+
+  @include desktop-only {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
+
 .sub__title {
   margin-bottom: 15px;
   font-size: 18px;
   text-transform: uppercase;
+  @include desktop-only {
+    padding: 15px 0 15px 15px;
+    width: 100%;
+  }
 
   &:after {
     content: "";
@@ -120,6 +134,11 @@ header .cover__img img {
   padding: 0 5px 8px 12px;
   @include shadowbox;
   margin-top: 25px;
+  @include desktop-only {
+    flex: 25%;
+    margin-left: 15px;
+  }
+
   &:hover {
     @include shadowOne;
   }
@@ -179,4 +198,8 @@ header .cover__img img {
   background: $color-tertiary;
   /*left: 27%;
   top: 30%;*/
+}
+
+.command-btn {
+  text-align: center;
 }
