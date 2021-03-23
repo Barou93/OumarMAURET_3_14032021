@@ -780,10 +780,16 @@ header .cover__img img {
   width: 40px;
 }
 
+.menu__title__price {
+  width: 80%;
+  padding: 15px;
+}
+
 .menu__text {
+  display: flex;
+  justify-content: space-between;
   background: #fff;
   border-radius: 20px;
-  padding: 0 5px 8px 12px;
   box-shadow: 0 5px 15px 0 #c3c3c3;
   margin-top: 25px;
 }
@@ -797,36 +803,32 @@ header .cover__img img {
   box-shadow: 0 5px 15px 0 #9d9d9d;
 }
 .menu__text .prod {
-  position: relative;
-  top: 12px;
   font-size: 15px;
   font-weight: bold;
-  margin: 0 0 5px;
+  margin-left: 12px;
   overflow: hidden;
 }
 .menu__text h4 {
-  position: relative;
-  top: 25px;
   color: #333;
+  margin-left: 12px;
   font-size: 11px;
   font-weight: normal;
 }
 .menu__text .price__container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-end;
 }
 .menu__text .price {
-  align-items: center;
-  display: flex;
   font-size: 1.125em;
   font-weight: bold;
-  justify-content: flex-end;
+  margin-top: 18px;
   padding-right: 10px;
   text-align: right;
 }
 .menu__text .checkbox {
   display: none;
+  width: 20%;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   position: relative;
@@ -845,11 +847,11 @@ header .cover__img img {
   transform-origin: 50% 50%;
 }
 
-.menu__text:hover .btn-circle {
+.menu__text .btn-circle {
   position: absolute;
+  left: 27%;
+  top: 30%;
   background: #99e2d0;
-  /*left: 27%;
-  top: 30%;*/
 }
 
 .command-btn {
