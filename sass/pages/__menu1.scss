@@ -128,10 +128,16 @@ header .cover__img img {
   }
 }
 
+.menu__title__price {
+  width: 80%;
+  padding: 15px;
+}
+
 .menu__text {
+  display: flex;
+  justify-content: space-between;
   background: #fff;
   border-radius: 20px;
-  padding: 0 5px 8px 12px;
   @include shadowbox;
   margin-top: 25px;
   @include desktop-only {
@@ -143,37 +149,33 @@ header .cover__img img {
     @include shadowOne;
   }
   .prod {
-    position: relative;
-    top: 12px;
     font-size: 15px;
     font-weight: $fontWeight;
-    margin: 0 0 5px;
+    margin-left: 12px;
     overflow: hidden;
   }
   h4 {
-    position: relative;
-    top: 25px;
     color: #333;
+    margin-left: 12px;
     font-size: 11px;
     font-weight: normal;
   }
   .price__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end;
   }
   .price {
-    align-items: center;
-    display: flex;
     font-size: 1.125em;
     font-weight: bold;
-    justify-content: flex-end;
+    margin-top: 18px;
     padding-right: 10px;
     text-align: right;
   }
 
   .checkbox {
     display: none;
+    width: 20%;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     position: relative;
@@ -193,11 +195,11 @@ header .cover__img img {
   transform-origin: 50% 50%;
 }
 
-.menu__text:hover .btn-circle {
+.menu__text .btn-circle {
   position: absolute;
+  left: 27%;
+  top: 30%;
   background: $color-tertiary;
-  /*left: 27%;
-  top: 30%;*/
 }
 
 .command-btn {
