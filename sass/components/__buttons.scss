@@ -15,11 +15,14 @@
   padding: 15px 15px;
   transition: 0.2s;
   &:hover {
-    background: linear-gradient(#ff93e1, #a16be0);
+    background: linear-gradient(#f77dd4, #ab65fa);
     @include shadowbox;
   }
 }
 
+%likeanimated {
+  transition: 0.5s 0s ease;
+}
 .like {
   position: relative;
 
@@ -36,14 +39,18 @@
       color: $color-primary;
       opacity: 1;
       z-index: 999;
+      @extend %likeanimated;
     }
   }
   &:hover {
     cursor: pointer;
     overflow: hidden;
+    opacity: 1;
+    @extend %likeanimated;
   }
   .default-icon:hover {
     opacity: 0;
+    @extend %likeanimated;
   }
 }
 
