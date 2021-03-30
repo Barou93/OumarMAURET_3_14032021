@@ -28,3 +28,9 @@
     @content;
   }
 }
+
+/*Animation proprety*/
+
+@mixin animatedloader {
+  animation: loader;
+}
