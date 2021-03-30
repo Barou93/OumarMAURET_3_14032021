@@ -18,7 +18,7 @@ h1 {
   line-height: 1;
   font-weight: bold;
 }
-
+/*****Header****/
 .menu__header {
   display: flex;
   flex-direction: column;
@@ -64,6 +64,7 @@ header .cover__img img {
   width: 100%;
 }
 
+/*Menu restaurants*/
 .bg-grey {
   background: #f6f6f6;
 }
@@ -131,75 +132,6 @@ header .cover__img img {
 .menu__title__price {
   width: 80%;
   padding: 15px;
-}
-
-.menu__text {
-  display: flex;
-  justify-content: space-between;
-  background: #fff;
-  border-radius: 20px;
-  @include shadowbox;
-  margin-top: 25px;
-  @include desktop-only {
-    flex: 25%;
-    margin-left: 15px;
-  }
-
-  &:hover {
-    @include shadowOne;
-  }
-  .prod {
-    font-size: 15px;
-    font-weight: $fontWeight;
-    margin-left: 12px;
-    overflow: hidden;
-  }
-  h4 {
-    color: #333;
-    margin-left: 12px;
-    font-size: 11px;
-    font-weight: normal;
-  }
-  .price__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .price {
-    font-size: 1.125em;
-    font-weight: bold;
-    margin-top: 18px;
-    padding-right: 10px;
-    text-align: right;
-  }
-
-  .checkbox {
-    display: none;
-    width: 20%;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    position: relative;
-  }
-  .btn-circle {
-    font-size: 24px;
-    color: #fff;
-  }
-}
-
-.menu__text:hover .checkbox {
-  display: block;
-  flex: 0 0 15%;
-  background: $color-tertiary;
-  max-width: 50px;
-  overflow: hidden;
-  transform-origin: 50% 50%;
-}
-
-.menu__text .btn-circle {
-  position: absolute;
-  left: 27%;
-  top: 30%;
-  background: $color-tertiary;
 }
 
 .command-btn {

@@ -1,0 +1,80 @@
+/*Animation de l'icone validation */
+
+@keyframes validebtn {
+  0% {
+    transform: rotade(-90deg);
+  }
+
+  20% {
+    transform: rotade(-75deg) scale(1.03);
+  }
+
+  40% {
+    transform: rotade(-60deg) scale(1.08);
+  }
+
+  60% {
+    transform: rotate(-45deg) scale(1.15);
+  }
+
+  80% {
+    transform: rotade(-30deg) scale(1.08);
+  }
+  100% {
+    transform: rotate3d(5deg) scale(1);
+  }
+}
+
+/*Animation du checkbox */
+
+@keyframes checkbox {
+  0% {
+    transform: translate(50px, 0);
+  }
+
+  20% {
+    transform: translate(30px, 0);
+  }
+
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+
+/*Animation de page */
+@keyframes fadeIn {
+  from {
+    transform: scale(0.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
