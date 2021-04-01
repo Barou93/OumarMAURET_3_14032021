@@ -77,11 +77,9 @@
     align-items: center;
     justify-content: flex-start;
     color: grey;
-    margin-right: 15px;
+    margin: 0 20px 0 25px;
     position: absolute;
     font-size: 20px;
-    margin-left: 17px;
-    margin-right: 20px;
     @include tablette-only {
       margin-left: 40px;
       margin-top: -10px;
