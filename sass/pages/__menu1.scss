@@ -1,6 +1,7 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 @import "../components/_buttons";
+@import "../layout/_animations";
 
 body {
   background-color: #fff;
@@ -93,8 +94,6 @@ header .cover__img img {
 }
 
 .menu__plats {
-  display: flex;
-  flex-flow: column wrap;
   padding: 20px;
 }
 
@@ -112,7 +111,7 @@ header .cover__img img {
 }
 
 .sub__title {
-  margin-bottom: 15px;
+  margin: 25px 0;
   font-size: 18px;
   text-transform: uppercase;
   @include desktop-only {
@@ -129,9 +128,29 @@ header .cover__img img {
   }
 }
 
+%text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.prod {
+  font-size: 20px;
+  font-weight: $fontWeight;
+  margin-left: 12px;
+  @extend %text-overflow;
+}
+h4 {
+  color: #333;
+  margin-left: 18px;
+  font-size: 15px;
+  font-weight: normal;
+  @extend %text-overflow;
+}
+
 .menu__title__price {
   width: 80%;
-  padding: 15px;
+  padding: 10px;
+  @extend %text-overflow;
 }
 
 .command-btn {

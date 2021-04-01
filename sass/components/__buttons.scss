@@ -36,7 +36,10 @@
     opacity: 0;
     position: absolute;
     &:hover {
-      color: $color-primary;
+      @include lineargarden;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+
       opacity: 1;
       z-index: 999;
       @extend %likeanimated;
