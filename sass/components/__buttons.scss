@@ -8,11 +8,12 @@
   border: 0;
   text-align: center;
   border-radius: 25px;
+  font-size: 15px;
   color: #fff;
   @include shadowbox;
   font-weight: bold;
   margin: 0 0.3em 0.3em 0;
-  padding: 15px 15px;
+  padding: 15px 30px;
   transition: 0.2s;
   &:hover {
     background: linear-gradient(#f77dd4, #ab65fa);

@@ -5,6 +5,7 @@
   justify-content: space-between;
   background: #fff;
   border-radius: 20px;
+  cursor: pointer;
   @include shadowbox;
   margin-top: 25px;
 
@@ -28,7 +29,6 @@
     margin-top: 18px;
     padding-right: 10px;
     text-align: right;
-    animation: checkbox-contain ease 0.3s forwards 1;
   }
 
   .checkbox {
@@ -44,6 +44,10 @@
   }
 }
 
+.menu__text:hover .price {
+  animation: checkbox-contain ease 0.3s forwards 1;
+}
+
 .menu__text:hover .checkbox {
   display: block;
   flex: 0 0 15%;
@@ -55,7 +59,7 @@
   transform-origin: 50% 50%;
 }
 
-.menu__text .btn-circle {
+.menu__text:hover .btn-circle {
   position: absolute;
   left: 27%;
   top: 30%;
