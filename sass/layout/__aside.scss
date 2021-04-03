@@ -13,7 +13,7 @@
   %backgroundgradient {
     @include lineargarden;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
   }
   &__step {
     display: flex;
