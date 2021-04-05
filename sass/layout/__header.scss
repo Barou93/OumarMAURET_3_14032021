@@ -1,5 +1,3 @@
-@import "../utils/mixin.scss";
-
 .header {
   display: flex;
   flex-direction: column;
@@ -38,7 +36,7 @@
   width: 200px;
   @include desktop-only {
     background: linear-gradient(#ff79da, #9356dc);
-    padding: 3px -5px;
+    padding: 3px;
     width: 50%;
     border-radius: 25px;
     margin-right: 25px;

@@ -1,5 +1,3 @@
-@import "../utils/variables";
-@import "../utils/mixin.scss";
 .reserve__btn-1 {
   display: inline-block;
   @include lineargarden;
@@ -26,10 +24,12 @@
 }
 .like {
   position: relative;
+  margin-right: 22px;
+  margin-top: 4px;
 
   i {
     color: #9d9d9d;
-    font-size: 20px;
+    font-size: 24px;
     left: 50%;
   }
   .hover-icon {
